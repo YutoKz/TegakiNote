@@ -1,0 +1,29 @@
+[project]
+name = "tegakinote"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Yuto_VAIO", email = "yuto17qc@gmail.com" }
+]
+dependencies = [
+    "pyperclip>=1.9.0",
+    "pillow>=11.1.0",
+    "google-genai>=1.5.0",
+    "pyqt6>=6.8.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tegakinote"]
